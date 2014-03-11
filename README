@@ -1,3 +1,9 @@
+This is a Textmate bundle for OpenERP XML (views) code. It was originally taken
+from https://github.com/qubird/OpenerpXML.tmbundle but updated, modified and
+extended for my day to day use as an OpenERP technical consultant.
+
+Original README:
+
 This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
