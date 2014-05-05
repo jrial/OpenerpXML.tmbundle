@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>content</key>
-    <string>&lt;delete model="${1:model}" search="[('${2:field}', '=', '${3:string}')]"/&gt;</string>
+    <string>&lt;delete model="${1:model}" search="[('name', '=', '${3:string}')]"/&gt;</string>
     <key>name</key>
-    <string>Delete</string>
+    <string>Delete by Search</string>
     <key>scope</key>
     <string>text.xml.openerp</string>
     <key>tabTrigger</key>

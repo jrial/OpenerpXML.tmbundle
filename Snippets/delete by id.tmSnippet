@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;delete model="${1:model}" id="${3:string}"/&gt;</string>
+    <key>name</key>
+    <string>Delete by ID</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>del</string>
+    <key>uuid</key>
+    <string>78913D65-D242-419B-94E5-28E06363B236</string>
+</dict>
+</plist>
