@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;record model="ir.rule" id="project_confidential_rule"&gt;
+    &lt;field name="name"&gt;${1:Descriptive Name}&lt;/field&gt;
+    &lt;field name="model_id" ref="${2:module}.model_${3:model}"/&gt;
+    &lt;field name="domain_force"&gt;[('${4:user_id}','${5:=}',${6:user.id})]&lt;/field&gt;
+    &lt;field name="groups" eval="[(6, 0, [ref('${7:module.group_name}')])]" /&gt;
+&lt;/record&gt;
+</string>
+    <key>name</key>
+    <string>Record Rule</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>rule</string>
+    <key>uuid</key>
+    <string>4141341c-4740-11e5-90d1-34e6d7771b7d</string>
+</dict>
+</plist>
