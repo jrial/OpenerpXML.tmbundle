@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;record id="${1:module}.group_${2:name}" model="res.groups"&gt;
+    &lt;field name="name"&gt;${3:Name}&lt;/field&gt;
+    ${9:&lt;!-- For "commands" tuple specifications, search "commands"
+        on https://www.odoo.com/documentation/8.0/reference/orm.html
+        The short:
+        (0, _, values): create from values and add
+        (1, id, values): update existing from values
+        (2, id, _): delete and unlink
+        (3, id, _): remove from relationship, don't unlink (m2m only)
+        (4, id, _): add existing (m2m only)
+        (5, _, _): remove all (m2m only)
+        (6, _, ids): replace entire set (m2m only)
+        --&gt;
+    }&lt;field name="implied_ids" eval="[(6, 0, [ref('${4:module}.${5:group_id}')])]"/&gt;
+    &lt;!--&lt;field name="category_id" ref="${6:ir_module_categ_id}"/&gt;--&gt;
+    &lt;!--&lt;field name="users" eval="[(6, 0; ref('${7:module}.${8:user_id}'))]"/&gt;--&gt;
+&lt;/record&gt;
+    </string>
+    <key>name</key>
+    <string>Res Groups</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>resg</string>
+    <key>uuid</key>
+    <string>583A7404-52E3-11E5-AD26-34E6D7771B7D</string>
+</dict>
+</plist>
