@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;record model="ir.cron" id="cron_${1:xmlid}"&gt;
+    &lt;field name="name"&gt;${2:Descriptive Name}&lt;/field&gt;
+    &lt;field name="model" eval="'${3:model_name}'"/&gt;
+    &lt;field name="function" eval="'${4:method_name}'"/&gt;
+    &lt;field name="interval_number"&gt;${5:1}&lt;/field&gt;
+    &lt;field name="interval_type"&gt;${6:weeks}&lt;/field&gt;
+    &lt;field name="numbercall"&gt;${7:-1}&lt;/field&gt;
+    &lt;field name="doall" eval="${8:False}"/&gt;
+    &lt;field name="args" eval="'(${9:1, })'" /&gt;${11:
+    &lt;field name="nextcall"&gt;${10:2015-01-01 00:00:00}&lt;/field&gt;}
+&lt;/record&gt;
+</string>
+    <key>name</key>
+    <string>Button</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>cron</string>
+    <key>uuid</key>
+    <string>A79C4E82-65F3-11E5-B959-34E6D7771B7D</string>
+</dict>
+</plist>
