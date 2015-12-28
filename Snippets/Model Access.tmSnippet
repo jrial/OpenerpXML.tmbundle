@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
     <key>content</key>
-    <string>&lt;record id="${1:xmlid}" model="ir.model.access"&gt;
+    <string>&lt;record model="ir.model.access" id="${1:xmlid}"&gt;
     &lt;field name="name"&gt;${2:name}&lt;/field&gt;
     &lt;field name="model_id" ref="${3:module}.model_${4:model}"/&gt;
     &lt;field name="group_id" ref="${5:module.group_name}"/&gt;
-    &lt;field name="perm_read" eval="${6:1}"/&gt;
-    &lt;field name="perm_write" eval="${7:1}"/&gt;
-    &lt;field name="perm_create" eval="${8:0}"/&gt;
-    &lt;field name="perm_unlink" eval="${9:0}"/&gt;
+    &lt;field name="perm_read" eval="${6:True}"/&gt;
+    &lt;field name="perm_write" eval="${7:True}"/&gt;
+    &lt;field name="perm_create" eval="${8:False}"/&gt;
+    &lt;field name="perm_unlink" eval="${9:False}"/&gt;
 &lt;/record&gt;
 </string>
     <key>name</key>
