@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;record id="${1:xmlid}" model="ir.ui.view"&gt;
+    &lt;field name="name"&gt;${2:Title} Search&lt;/field&gt;
+    &lt;field name="model"&gt;${3:model}&lt;/field&gt;
+    &lt;field name="arch" type="xml"&gt;
+        &lt;search string="Search ${2}"&gt;
+            &lt;field name="${4:name}"/&gt;
+            &lt;group expand="0" string="Group By"&gt;
+                &lt;filter string="${5:Filter String}" domain="${6:[]]}" context="{'group_by':'${7:field_name}'}"/&gt;
+            &lt;/group&gt;
+        &lt;/search&gt;
+    &lt;/field&gt;
+&lt;/record&gt;</string>
+    <key>name</key>
+    <string>Search View</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>search</string>
+    <key>uuid</key>
+    <string>7b891f18-7eea-11e5-9554-34e6d7771b7d</string>
+</dict>
+</plist>
+
+
+
+
+
