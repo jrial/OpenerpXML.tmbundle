@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>content</key>
+    <string>&lt;record model="ir.ui.view" id="${1/\./_/g}_form"&gt;
+    &lt;field name="name"&gt;${1:model}.form&lt;/field&gt;
+    &lt;field name="model"&gt;${1}&lt;/field&gt;
+    &lt;field name="type"&gt;form&lt;/field&gt;
+    &lt;field name="arch" type="xml"&gt;
+        &lt;form string="${2:Title}"&gt;
+            &lt;field name="${3:field_name}"/&gt;
+        &lt;/form&gt;
+        &lt;footer&gt;
+            &lt;button name="do_finish" string="_Apply" type="object" class="oe_highlight"/&gt;
+            or
+            &lt;button string="_Cancel" class="oe_link" special="cancel" /&gt;
+        &lt;/footer&gt;
+    &lt;/field&gt;
+&lt;/record&gt;
+</string>
+    <key>name</key>
+    <string>Wizard Form</string>
+    <key>scope</key>
+    <string>text.xml.openerp</string>
+    <key>tabTrigger</key>
+    <string>wiz</string>
+    <key>uuid</key>
+    <string>F1D1F014-6766-11E5-BBB7-34E6D7771B7D</string>
+</dict>
+</plist>
